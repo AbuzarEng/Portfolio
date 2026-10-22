@@ -1,0 +1,2209 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abuzar Khan | Full-Stack Developer &amp; Business Development</title>
+    <meta
+      name="description"
+      content="Portfolio of Abuzar Khan: Computer Science Engineering student, MERN-stack developer and business development / pre-sales professional based in Pune, India."
+    />
+    <meta name="theme-color" content="#020617" />
+    <meta
+      property="og:title"
+      content="Abuzar Khan | Full-Stack Developer &amp; Business Development"
+    />
+    <meta
+      property="og:description"
+      content="MERN-stack developer with a business development and pre-sales mindset. Projects, skills, experience and contact."
+    />
+    <meta property="og:type" content="website" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abuzar Khan",
+        "jobTitle": "Full-Stack Developer and Business Development Professional",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "alumniOf": "SSGB College of Engineering & Technology, Bhusawal"
+      }
+    </script>
+
+    <!-- Apply saved theme BEFORE paint (no flash). Default: dark. -->
+    <script>
+      (function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        if (!t)
+          t =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+        document.documentElement.classList.toggle("dark", t === "dark");
+      })();
+      document.documentElement.classList.add("motion-pending");
+      setTimeout(function () {
+        if (!window.__motionReady)
+          document.documentElement.classList.remove("motion-pending");
+      }, 3000);
+      // Fallback avatar if profile.jpg is missing
+      window.FALLBACK_AVATAR =
+        "data:image/svg+xml;utf8," +
+        encodeURIComponent(
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient></defs><rect width="200" height="200" fill="url(#g)"/><text x="100" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="72" font-weight="700" fill="#fff">AK</text></svg>',
+        );
+    </script>
+
+    <!-- Tailwind CSS (CDN) with theme tokens driven by CSS variables -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              bg: "rgb(var(--c-bg) / <alpha-value>)",
+              surface: "rgb(var(--c-surface) / <alpha-value>)",
+              fg: "rgb(var(--c-fg) / <alpha-value>)",
+              muted: "rgb(var(--c-muted) / <alpha-value>)",
+              soft: "rgb(var(--c-soft) / <alpha-value>)",
+              line: "rgb(var(--c-line) / <alpha-value>)",
+              accent: "rgb(var(--c-accent) / <alpha-value>)",
+              accent2: "rgb(var(--c-accent2) / <alpha-value>)",
+              ok: "rgb(var(--c-ok) / <alpha-value>)",
+              btn: "rgb(var(--c-btn) / <alpha-value>)",
+            },
+            keyframes: {
+              slideDown: {
+                "0%": { transform: "translateY(-100%)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+            },
+            animation: { slideDown: "slideDown 0.9s ease-in-out forwards" },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* ---------- Theme tokens (RGB triplets) ---------- */
+      :root {
+        /* LIGHT */
+        --c-bg: 248 250 252;
+        --c-surface: 255 255 255;
+        --c-fg: 15 23 42;
+        --c-muted: 71 85 105;
+        --c-soft: 100 116 139;
+        --c-line: 15 23 42;
+        --c-accent: 79 70 229;
+        --c-accent2: 2 132 199;
+        --c-ok: 5 150 105;
+        --c-btn: 79 70 229;
+      }
+      html.dark {
+        /* DARK */
+        --c-bg: 2 6 23;
+        --c-surface: 15 23 42;
+        --c-fg: 241 245 249;
+        --c-muted: 148 163 184;
+        --c-soft: 148 163 184;
+        --c-line: 255 255 255;
+        --c-accent: 129 140 248;
+        --c-accent2: 56 189 248;
+        --c-ok: 52 211 153;
+        --c-btn: 79 70 229;
+      }
+      html {
+        color-scheme: light;
+      }
+      html.dark {
+        color-scheme: dark;
+      }
+      body {
+        background: rgb(var(--c-bg));
+        color: rgb(var(--c-fg));
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+
+      /* ---------- Motion pre-hide ---------- */
+      .motion-pending [data-animate],
+      .motion-pending [data-pop],
+      .motion-pending [data-reveal] {
+        opacity: 0;
+      }
+
+      /* ---------- Animated logo ---------- */
+      .logo-draw {
+        fill: none;
+        stroke: url(#logoGrad);
+        stroke-width: 3.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation: draw 1.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+      }
+      .logo-draw.d1 {
+        animation-delay: 0.5s;
+      }
+      .logo-draw.d2 {
+        animation-delay: 0.9s;
+      }
+      .logo-draw.d3 {
+        animation-delay: 1.3s;
+      }
+      .logo-frame {
+        fill: rgb(var(--c-accent) / 0.08);
+        stroke: rgb(var(--c-accent) / 0.55);
+        stroke-width: 1.5;
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation: draw 1.2s ease forwards;
+      }
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      .logo-mark {
+        animation: logoGlow 3.5s ease-in-out 2.4s infinite;
+      }
+      @keyframes logoGlow {
+        0%,
+        100% {
+          filter: drop-shadow(0 0 0 rgb(var(--c-accent) / 0));
+        }
+        50% {
+          filter: drop-shadow(0 0 8px rgb(var(--c-accent) / 0.55));
+        }
+      }
+      .logo-text {
+        background: linear-gradient(
+          90deg,
+          rgb(var(--c-fg)),
+          rgb(var(--c-accent)),
+          rgb(var(--c-accent2)),
+          rgb(var(--c-fg))
+        );
+        background-size: 250% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation:
+          shimmer 5s linear infinite,
+          logoIn 0.8s ease 1.2s both;
+      }
+      @keyframes shimmer {
+        to {
+          background-position: -250% 0;
+        }
+      }
+      @keyframes logoIn {
+        from {
+          opacity: 0;
+          transform: translateX(-8px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* ---------- Header links ---------- */
+      .nav-link {
+        position: relative;
+        color: rgb(var(--c-muted));
+        transition: color 0.2s;
+        padding: 4px 0;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: rgb(var(--c-fg));
+      }
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 2px;
+        width: 100%;
+        background: rgb(var(--c-accent));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+      .nav-link:hover::after,
+      .nav-link.active::after {
+        transform: scaleX(1);
+      }
+      .mobile-link {
+        display: block;
+        padding: 10px 0;
+        color: rgb(var(--c-muted));
+        border-bottom: 1px solid rgb(var(--c-line) / 0.08);
+      }
+      .mobile-link:hover,
+      .mobile-link.active {
+        color: rgb(var(--c-accent));
+      }
+
+      /* ---------- Hero ---------- */
+      .typed-cursor {
+        display: inline-block;
+        width: 2px;
+        height: 1.1em;
+        margin-left: 3px;
+        vertical-align: -0.15em;
+        background: rgb(var(--c-accent));
+        animation: blink 1s steps(1) infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      /* ---------- Shared components ---------- */
+      section[id] {
+        scroll-margin-top: 4rem;
+      }
+      .eyebrow {
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgb(var(--c-accent));
+        font-weight: 600;
+      }
+      .section-title {
+        margin-top: 0.5rem;
+        font-size: clamp(1.875rem, 4vw, 2.5rem);
+        font-weight: 800;
+        color: rgb(var(--c-fg));
+        letter-spacing: -0.02em;
+      }
+      .section-sub {
+        margin: 0.75rem auto 0;
+        max-width: 40rem;
+        color: rgb(var(--c-muted));
+      }
+      .card {
+        border: 1px solid rgb(var(--c-line) / 0.1);
+        background: rgb(var(--c-surface) / 0.75);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        transition:
+          border-color 0.3s,
+          box-shadow 0.3s,
+          transform 0.3s;
+      }
+      .card:hover {
+        border-color: rgb(var(--c-accent) / 0.55);
+        box-shadow: 0 10px 30px -12px rgb(var(--c-accent) / 0.4);
+      }
+      .chip {
+        display: inline-block;
+        border: 1px solid rgb(var(--c-line) / 0.12);
+        background: rgb(var(--c-line) / 0.04);
+        border-radius: 0.6rem;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.85rem;
+        color: rgb(var(--c-muted));
+        transition:
+          border-color 0.2s,
+          color 0.2s;
+      }
+      .chip:hover {
+        border-color: rgb(var(--c-accent));
+        color: rgb(var(--c-fg));
+      }
+      .tag {
+        display: inline-block;
+        border-radius: 9999px;
+        background: rgb(var(--c-accent) / 0.14);
+        color: rgb(var(--c-accent));
+        padding: 0.15rem 0.65rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+      .field {
+        width: 100%;
+        border-radius: 0.75rem;
+        border: 1px solid rgb(var(--c-line) / 0.15);
+        background: rgb(var(--c-bg) / 0.7);
+        padding: 0.75rem 1rem;
+        color: rgb(var(--c-fg));
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+      .field:focus {
+        border-color: rgb(var(--c-accent));
+        box-shadow: 0 0 0 3px rgb(var(--c-accent) / 0.25);
+      }
+      .field::placeholder {
+        color: rgb(var(--c-soft));
+      }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 0.75rem;
+        background: rgb(var(--c-btn));
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        box-shadow: 0 8px 20px -8px rgb(var(--c-btn) / 0.7);
+        transition:
+          background-color 0.2s,
+          transform 0.2s;
+      }
+      .btn-primary:hover {
+        background: rgb(99 102 241);
+        transform: translateY(-1px);
+      }
+      .btn-ghost {
+        border-radius: 0.75rem;
+        border: 1px solid rgb(var(--c-line) / 0.2);
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        color: rgb(var(--c-fg));
+        transition: all 0.2s;
+      }
+      .btn-ghost:hover {
+        border-color: rgb(var(--c-accent));
+        background: rgb(var(--c-accent) / 0.08);
+      }
+      .icon-btn {
+        display: grid;
+        place-items: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 9999px;
+        border: 1px solid rgb(var(--c-line) / 0.15);
+        color: rgb(var(--c-muted));
+        transition: all 0.2s;
+      }
+      .icon-btn:hover {
+        border-color: rgb(var(--c-accent));
+        color: rgb(var(--c-fg));
+      }
+      a:focus-visible,
+      button:focus-visible,
+      .field:focus-visible {
+        outline: 2px solid rgb(var(--c-accent));
+        outline-offset: 3px;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+      }
+      #to-top {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+      }
+      #to-top.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .theme-sun {
+        display: none;
+      }
+      html.dark .theme-sun {
+        display: block;
+      }
+      html.dark .theme-moon {
+        display: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .logo-draw,
+        .logo-frame {
+          animation: none;
+          stroke-dashoffset: 0;
+        }
+        .logo-mark,
+        .logo-text,
+        .typed-cursor {
+          animation: none;
+        }
+        .logo-text {
+          opacity: 1;
+        }
+        header {
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:bg-btn focus:px-4 focus:py-2 focus:rounded-lg focus:text-white"
+      >Skip to content</a
+    >
+    <div
+      id="progress"
+      class="fixed top-0 left-0 h-0.5 w-0 bg-gradient-to-r from-accent via-accent2 to-ok z-[60]"
+    ></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header
+      id="header"
+      class="fixed top-0 left-0 w-full z-50 animate-slideDown bg-bg/60 backdrop-blur-md border-b border-line/10 transition-all duration-300"
+    >
+      <nav
+        class="max-w-6xl mx-auto flex items-center justify-between px-5 py-3"
+        aria-label="Main navigation"
+      >
+        <!-- Animated logo -->
+        <a
+          href="#home"
+          class="flex items-center gap-3"
+          aria-label="Abuzar Khan, back to top"
+        >
+          <svg
+            class="logo-mark h-10 w-11"
+            viewBox="0 0 48 40"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" style="stop-color: rgb(var(--c-accent))" />
+                <stop offset="1" style="stop-color: rgb(var(--c-accent2))" />
+              </linearGradient>
+            </defs>
+            <rect
+              class="logo-frame"
+              pathLength="1"
+              x="1"
+              y="1"
+              width="46"
+              height="38"
+              rx="10"
+            />
+            <path
+              class="logo-draw d1"
+              pathLength="1"
+              d="M7 31 L15 9 L23 31 M10 24 H20"
+            />
+            <path class="logo-draw d2" pathLength="1" d="M29 9 V31" />
+            <path
+              class="logo-draw d3"
+              pathLength="1"
+              d="M40 9 L29 20 M32 18 L40 31"
+            />
+          </svg>
+          <span
+            class="logo-text text-lg sm:text-xl font-extrabold tracking-tight"
+            >Abuzar Khan</span
+          >
+        </a>
+
+        <ul class="hidden lg:flex items-center gap-5 text-sm font-medium">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="flex items-center gap-3">
+          <!-- Theme toggle -->
+          <button
+            id="theme-toggle"
+            type="button"
+            class="icon-btn"
+            aria-label="Switch colour theme"
+            title="Switch theme"
+          >
+            <svg
+              class="theme-sun w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                stroke-linecap="round"
+                d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"
+              />
+            </svg>
+            <svg
+              class="theme-moon w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"
+              />
+            </svg>
+          </button>
+
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="hidden xl:grid icon-btn"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com/in/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="hidden xl:grid icon-btn"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden lg:inline-block rounded-lg bg-btn px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-500 transition"
+            >Resume</a
+          >
+
+          <button
+            id="menu-btn"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="lg:hidden text-muted hover:text-fg focus:outline-none"
+          >
+            <svg
+              id="icon-open"
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg
+              id="icon-close"
+              class="w-7 h-7 hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-bg/95"
+      >
+        <ul class="flex flex-col gap-1 px-5 pb-5 text-base font-medium">
+          <li><a href="#home" class="mobile-link">Home</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#education" class="mobile-link">Education</a></li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li><a href="#experience" class="mobile-link">Experience</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+          <li class="flex items-center gap-4 pt-3">
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-muted hover:text-fg"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-muted hover:text-fg"
+              >LinkedIn</a
+            >
+            <a
+              href="resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ml-auto rounded-lg bg-btn px-4 py-2 text-sm font-semibold text-white"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ===================== HOME ===================== -->
+      <section
+        id="home"
+        class="relative min-h-screen overflow-hidden flex items-center pt-28 pb-24 px-5"
+      >
+        <div class="absolute inset-0 pointer-events-none">
+          <div
+            class="absolute inset-0 opacity-[0.08]"
+            style="
+              background-image:
+                linear-gradient(rgb(var(--c-line)) 1px, transparent 1px),
+                linear-gradient(90deg, rgb(var(--c-line)) 1px, transparent 1px);
+              background-size: 48px 48px;
+              -webkit-mask-image: radial-gradient(
+                ellipse at center,
+                black 30%,
+                transparent 75%
+              );
+              mask-image: radial-gradient(
+                ellipse at center,
+                black 30%,
+                transparent 75%
+              );
+            "
+          ></div>
+          <div
+            id="blob-1"
+            class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-accent/25 blur-3xl"
+          ></div>
+          <div
+            id="blob-2"
+            class="absolute bottom-0 -right-20 w-[28rem] h-[28rem] rounded-full bg-accent2/20 blur-3xl"
+          ></div>
+        </div>
+
+        <div
+          class="relative z-10 max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-14 items-center"
+        >
+          <div class="order-2 lg:order-1 text-center lg:text-left">
+            <div
+              data-animate
+              class="inline-flex items-center gap-2 rounded-full border border-ok/30 bg-ok/10 px-4 py-1.5 text-sm text-ok"
+            >
+              <span class="relative flex h-2.5 w-2.5">
+                <span
+                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-ok opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex h-2.5 w-2.5 rounded-full bg-ok"
+                ></span>
+              </span>
+              Open to Business Development, Pre-Sales &amp; Developer roles
+            </div>
+
+            <p data-animate class="mt-6 text-lg font-medium text-accent">
+              Hi there, I'm
+            </p>
+            <h1
+              data-animate
+              class="mt-1 text-5xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight"
+            >
+              <span
+                class="bg-gradient-to-r from-accent via-accent2 to-ok bg-clip-text text-transparent"
+                >Abuzar Khan</span
+              >
+            </h1>
+            <h2
+              data-animate
+              class="mt-4 text-2xl sm:text-3xl font-semibold min-h-[2.5rem]"
+            >
+              <span id="typed">Computer Science Engineering Student</span
+              ><span class="typed-cursor"></span>
+            </h2>
+            <p
+              data-animate
+              class="mt-5 max-w-xl mx-auto lg:mx-0 text-base sm:text-lg leading-relaxed text-muted"
+            >
+              I build full-stack MERN applications and turn client requirements
+              into working solutions. With hands-on experience in market
+              research, lead generation and client communication, I bring a
+              technical background to business development and pre-sales.
+            </p>
+
+            <div
+              data-animate
+              class="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-muted"
+            >
+              <span class="inline-flex items-center gap-2">
+                <svg
+                  class="w-4 h-4 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"
+                  />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+                Pune, Maharashtra, India
+              </span>
+              <a
+                href="mailto:aburaja2654@gmail.com"
+                class="inline-flex items-center gap-2 hover:text-fg transition"
+              >
+                <svg
+                  class="w-4 h-4 text-accent"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m3 7 9 6 9-6"
+                  />
+                </svg>
+                aburaja2654@gmail.com
+              </a>
+            </div>
+
+            <div
+              data-animate
+              class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4"
+            >
+              <a href="#projects" class="btn-primary">
+                View My Work
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 12h14m-6-6 6 6-6 6"
+                  />
+                </svg>
+              </a>
+              <a href="#contact" class="btn-ghost">Contact Me</a>
+              <a
+                href="resume.pdf"
+                download
+                class="inline-flex items-center gap-2 rounded-xl px-3 py-3 font-semibold text-muted hover:text-fg transition"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14"
+                  />
+                </svg>
+                Download Resume
+              </a>
+            </div>
+
+            <div
+              data-animate
+              class="mt-8 flex items-center justify-center lg:justify-start gap-3"
+            >
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="icon-btn"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://linkedin.com/in/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="icon-btn"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="mailto:aburaja2654@gmail.com"
+                aria-label="Email"
+                class="icon-btn"
+              >
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m3 7 9 6 9-6"
+                  />
+                </svg>
+              </a>
+              <a href="tel:+919834891758" aria-label="Phone" class="icon-btn">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div
+              data-animate
+              class="mt-10 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 border-t border-line/10 pt-6"
+            >
+              <div>
+                <p class="text-3xl font-bold">
+                  <span data-count="4" data-suffix="">4</span>
+                </p>
+                <p class="text-xs sm:text-sm text-soft">Projects Built</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold">
+                  <span data-count="5" data-suffix="">5</span>
+                </p>
+                <p class="text-xs sm:text-sm text-soft">Certifications</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold">
+                  <span data-count="7.8" data-decimals="1" data-suffix=""
+                    >7.8</span
+                  >
+                </p>
+                <p class="text-xs sm:text-sm text-soft">B.Tech CGPA</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="order-1 lg:order-2 flex justify-center"
+            style="perspective: 1000px"
+          >
+            <div
+              id="profile"
+              data-pop
+              class="relative h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96"
+            >
+              <div
+                id="profile-tilt"
+                class="relative h-full w-full"
+                style="transform-style: preserve-3d"
+              >
+                <div
+                  class="absolute inset-4 rounded-full bg-accent/40 blur-3xl"
+                ></div>
+                <div
+                  id="ring"
+                  class="absolute inset-0 rounded-full"
+                  style="
+                    background: conic-gradient(
+                      from 0deg,
+                      rgb(var(--c-accent)),
+                      rgb(var(--c-accent2)),
+                      rgb(var(--c-ok)),
+                      transparent 60%,
+                      rgb(var(--c-accent))
+                    );
+                    -webkit-mask: radial-gradient(
+                      farthest-side,
+                      transparent calc(100% - 4px),
+                      #000 calc(100% - 3px)
+                    );
+                    mask: radial-gradient(
+                      farthest-side,
+                      transparent calc(100% - 4px),
+                      #000 calc(100% - 3px)
+                    );
+                  "
+                ></div>
+                <div
+                  class="absolute inset-3 overflow-hidden rounded-full bg-surface ring-1 ring-line/10"
+                >
+                  <img
+                    src="profile.jpg"
+                    alt="Portrait of Abuzar Khan"
+                    class="h-full w-full object-cover"
+                    onerror="
+                      this.onerror = null;
+                      this.src = window.FALLBACK_AVATAR;
+                    "
+                  />
+                </div>
+                <div data-pop class="absolute -top-2 -left-2 sm:-left-8">
+                  <span
+                    data-float
+                    class="block rounded-xl border border-line/15 bg-surface/90 px-3 py-1.5 text-sm font-medium text-accent2 backdrop-blur"
+                    >⚛ React.js</span
+                  >
+                </div>
+                <div data-pop class="absolute top-10 -right-3 sm:-right-10">
+                  <span
+                    data-float
+                    class="block rounded-xl border border-line/15 bg-surface/90 px-3 py-1.5 text-sm font-medium text-ok backdrop-blur"
+                    >Node.js</span
+                  >
+                </div>
+                <div data-pop class="absolute bottom-14 -left-4 sm:-left-12">
+                  <span
+                    data-float
+                    class="block rounded-xl border border-line/15 bg-surface/90 px-3 py-1.5 text-sm font-medium text-accent backdrop-blur"
+                    >MongoDB</span
+                  >
+                </div>
+                <div data-pop class="absolute -bottom-2 right-4 sm:-right-4">
+                  <span
+                    data-float
+                    class="block rounded-xl border border-line/15 bg-surface/90 px-3 py-1.5 text-sm font-medium text-fg backdrop-blur"
+                    >📈 Lead Gen</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2">
+          <a
+            id="scroll-hint"
+            data-animate
+            href="#about"
+            aria-label="Scroll to About section"
+            class="flex flex-col items-center gap-2 text-xs uppercase tracking-widest text-soft hover:text-fg transition"
+          >
+            Scroll
+            <span
+              class="grid h-9 w-6 place-items-start justify-center rounded-full border border-line/25 pt-1.5"
+              ><span class="h-2 w-1 rounded-full bg-accent"></span
+            ></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about" class="py-24 px-5 bg-surface/40">
+        <div class="max-w-6xl mx-auto">
+          <div data-reveal class="text-center mb-14">
+            <p class="eyebrow">About Me</p>
+            <h2 class="section-title">Where technology meets business</h2>
+          </div>
+
+          <div class="grid lg:grid-cols-5 gap-8">
+            <div data-reveal class="lg:col-span-3 card">
+              <h3 class="text-xl font-bold">Self Introduction</h3>
+              <p class="mt-4 leading-relaxed text-muted">
+                Hello! I'm <strong class="text-fg">Abuzar Khan</strong>, a
+                Computer Science Engineering student with strong communication,
+                analytical and technical problem-solving abilities. I have built
+                full-stack applications on the MERN stack, from real-time social
+                features to high-performance data feeds, and I enjoy translating
+                user requirements into solutions that work.
+              </p>
+              <p class="mt-4 leading-relaxed text-muted">
+                Alongside engineering, I have hands-on experience in affiliate
+                marketing, lead generation and client relationship management.
+                That mix lets me act as a bridge between technical logic and
+                stakeholder needs, which is exactly what Business Development
+                and Pre-Sales roles demand.
+              </p>
+              <p class="mt-4 leading-relaxed text-muted">
+                I'm fluent in English and Hindi, comfortable presenting findings
+                to teams and clients, and I'm looking for an opportunity in
+                business development, pre-sales, marketing or software
+                development where I can contribute from day one.
+              </p>
+            </div>
+
+            <div data-reveal class="lg:col-span-2 card">
+              <h3 class="text-xl font-bold">Profile Details</h3>
+              <dl class="mt-4 space-y-3 text-sm">
+                <div
+                  class="flex justify-between gap-4 border-b border-line/10 pb-2"
+                >
+                  <dt class="text-soft">Name</dt>
+                  <dd class="text-right">Abuzar Khan</dd>
+                </div>
+                <div
+                  class="flex justify-between gap-4 border-b border-line/10 pb-2"
+                >
+                  <dt class="text-soft">Role</dt>
+                  <dd class="text-right">
+                    Full-Stack Developer · Business Development
+                  </dd>
+                </div>
+                <div
+                  class="flex justify-between gap-4 border-b border-line/10 pb-2"
+                >
+                  <dt class="text-soft">Education</dt>
+                  <dd class="text-right">
+                    B.Tech, Computer Science (pursuing)
+                  </dd>
+                </div>
+                <div
+                  class="flex justify-between gap-4 border-b border-line/10 pb-2"
+                >
+                  <dt class="text-soft">Location</dt>
+                  <dd class="text-right">Pune, Maharashtra, India</dd>
+                </div>
+                <div
+                  class="flex justify-between gap-4 border-b border-line/10 pb-2"
+                >
+                  <dt class="text-soft">Languages</dt>
+                  <dd class="text-right">English, Hindi</dd>
+                </div>
+                <div
+                  class="flex justify-between gap-4 border-b border-line/10 pb-2"
+                >
+                  <dt class="text-soft">Email</dt>
+                  <dd class="text-right break-all">
+                    <a
+                      class="hover:text-accent"
+                      href="mailto:aburaja2654@gmail.com"
+                      >aburaja2654@gmail.com</a
+                    >
+                  </dd>
+                </div>
+                <div class="flex justify-between gap-4">
+                  <dt class="text-soft">Status</dt>
+                  <dd class="text-right text-ok">Open to opportunities</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Two profiles -->
+          <div class="mt-8 grid md:grid-cols-3 gap-6">
+            <div data-reveal class="card">
+              <div class="text-3xl">💻</div>
+              <p class="mt-3 text-xs uppercase tracking-widest text-accent">
+                Developer
+              </p>
+              <h3 class="mt-1 text-lg font-bold">MERN Stack Developer</h3>
+              <p class="mt-1 text-sm text-muted">
+                MongoDB, Express.js, React.js and Node.js applications with REST
+                APIs and JWT security.
+              </p>
+            </div>
+            <div data-reveal class="card">
+              <div class="text-3xl">🤝</div>
+              <p class="mt-3 text-xs uppercase tracking-widest text-accent">
+                Business
+              </p>
+              <h3 class="mt-1 text-lg font-bold">
+                Business Development &amp; Pre-Sales
+              </h3>
+              <p class="mt-1 text-sm text-muted">
+                Market research, prospect identification, account mapping and
+                client communication.
+              </p>
+            </div>
+            <div data-reveal class="card">
+              <div class="text-3xl">📣</div>
+              <p class="mt-3 text-xs uppercase tracking-widest text-accent">
+                Marketing
+              </p>
+              <h3 class="mt-1 text-lg font-bold">
+                Affiliate Marketer &amp; Lead Generator
+              </h3>
+              <p class="mt-1 text-sm text-muted">
+                Digital campaigns, social media outreach and follow-ups that
+                turn leads into repeat business. Self-employed, 2025 – present.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== EDUCATION ===================== -->
+      <section id="education" class="py-24 px-5">
+        <div class="max-w-6xl mx-auto">
+          <div data-reveal class="text-center mb-14">
+            <p class="eyebrow">Education</p>
+            <h2 class="section-title">
+              Academic background &amp; certifications
+            </h2>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h3 data-reveal class="mb-6 text-lg font-bold">🎓 Education</h3>
+              <ol id="education-list"></ol>
+            </div>
+            <div>
+              <h3 data-reveal class="mb-6 text-lg font-bold">
+                📜 Certifications
+              </h3>
+              <div id="cert-list" class="grid gap-4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SKILLS ===================== -->
+      <section id="skills" class="py-24 px-5 bg-surface/40">
+        <div class="max-w-6xl mx-auto">
+          <div data-reveal class="text-center mb-14">
+            <p class="eyebrow">Skills</p>
+            <h2 class="section-title">Technical depth, business sense</h2>
+            <p class="section-sub">
+              A blend of engineering skills and the commercial and communication
+              skills that win clients.
+            </p>
+          </div>
+
+          <h3 data-reveal class="mb-5 text-lg font-bold">Technical Skills</h3>
+          <div
+            id="tech-skills"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          ></div>
+
+          <h3 data-reveal class="mt-14 mb-5 text-lg font-bold">
+            Business &amp; Professional Skills
+          </h3>
+          <div
+            id="biz-skills"
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          ></div>
+        </div>
+      </section>
+
+      <!-- ===================== EXPERIENCE ===================== -->
+      <section id="experience" class="py-24 px-5">
+        <div class="max-w-4xl mx-auto">
+          <div data-reveal class="text-center mb-14">
+            <p class="eyebrow">Experience</p>
+            <h2 class="section-title">Where I've worked</h2>
+          </div>
+          <ol id="exp-list"></ol>
+        </div>
+      </section>
+
+      <!-- ===================== PROJECTS ===================== -->
+      <section id="projects" class="py-24 px-5 bg-surface/40">
+        <div class="max-w-6xl mx-auto">
+          <div data-reveal class="text-center mb-14">
+            <p class="eyebrow">Projects</p>
+            <h2 class="section-title">Things I've built</h2>
+            <p class="section-sub">
+              Real problems, solved end to end: from database design to user
+              experience.
+            </p>
+          </div>
+          <div id="project-list" class="grid md:grid-cols-2 gap-6"></div>
+        </div>
+      </section>
+
+      <!-- ===================== TESTIMONIALS ===================== -->
+      <section id="testimonials" class="py-24 px-5">
+        <div class="max-w-3xl mx-auto">
+          <div data-reveal class="text-center mb-12">
+            <p class="eyebrow">Testimonials</p>
+            <h2 class="section-title">What people say</h2>
+          </div>
+          <div data-reveal>
+            <div id="t-card" class="card text-center" aria-live="polite"></div>
+            <div
+              id="t-controls"
+              class="mt-6 flex items-center justify-center gap-4"
+            >
+              <button
+                id="t-prev"
+                aria-label="Previous testimonial"
+                class="icon-btn"
+              >
+                ‹
+              </button>
+              <div id="t-dots" class="flex gap-2"></div>
+              <button
+                id="t-next"
+                aria-label="Next testimonial"
+                class="icon-btn"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" class="py-24 px-5 bg-surface/40">
+        <div class="max-w-6xl mx-auto">
+          <div data-reveal class="text-center mb-14">
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title">Let's work together</h2>
+            <p class="section-sub">
+              Hiring for business development, pre-sales or development? Have a
+              project in mind? Send a message and I'll get back to you.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-5 gap-8">
+            <div data-reveal class="lg:col-span-2 space-y-4">
+              <a
+                href="mailto:aburaja2654@gmail.com"
+                class="card flex items-center gap-4"
+                ><span class="text-2xl">✉️</span
+                ><span class="min-w-0"
+                  ><span
+                    class="block text-xs uppercase tracking-widest text-soft"
+                    >Email</span
+                  ><span class="break-all">aburaja2654@gmail.com</span></span
+                ></a
+              >
+              <a
+                href="mailto:abuzarkhan.eng@gmail.com"
+                class="card flex items-center gap-4"
+                ><span class="text-2xl">📧</span
+                ><span class="min-w-0"
+                  ><span
+                    class="block text-xs uppercase tracking-widest text-soft"
+                    >Alternate email</span
+                  ><span class="break-all">abuzarkhan.eng@gmail.com</span></span
+                ></a
+              >
+              <a href="tel:+919834891758" class="card flex items-center gap-4"
+                ><span class="text-2xl">📞</span
+                ><span
+                  ><span
+                    class="block text-xs uppercase tracking-widest text-soft"
+                    >Phone</span
+                  >+91 98348 91758</span
+                ></a
+              >
+              <div class="card flex items-center gap-4">
+                <span class="text-2xl">📍</span
+                ><span
+                  ><span
+                    class="block text-xs uppercase tracking-widest text-soft"
+                    >Location</span
+                  >Pune, Maharashtra, India</span
+                >
+              </div>
+            </div>
+
+            <form
+              id="contact-form"
+              data-reveal
+              class="lg:col-span-3 card space-y-5"
+              novalidate
+            >
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="c-name" class="mb-1.5 block text-sm text-muted"
+                    >Name</label
+                  >
+                  <input
+                    id="c-name"
+                    name="name"
+                    type="text"
+                    required
+                    maxlength="80"
+                    autocomplete="name"
+                    class="field"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label for="c-email" class="mb-1.5 block text-sm text-muted"
+                    >Email</label
+                  >
+                  <input
+                    id="c-email"
+                    name="email"
+                    type="email"
+                    required
+                    maxlength="120"
+                    autocomplete="email"
+                    class="field"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="c-subject" class="mb-1.5 block text-sm text-muted"
+                  >Subject</label
+                >
+                <input
+                  id="c-subject"
+                  name="subject"
+                  type="text"
+                  required
+                  maxlength="120"
+                  class="field"
+                  placeholder="What's this about?"
+                />
+              </div>
+              <div>
+                <label for="c-message" class="mb-1.5 block text-sm text-muted"
+                  >Message</label
+                >
+                <textarea
+                  id="c-message"
+                  name="message"
+                  rows="5"
+                  required
+                  maxlength="2000"
+                  class="field resize-y"
+                  placeholder="Tell me about the opportunity or project..."
+                ></textarea>
+              </div>
+              <div class="sr-only" aria-hidden="true">
+                <label
+                  >Website
+                  <input
+                    type="text"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                /></label>
+              </div>
+              <div class="flex flex-wrap items-center gap-4">
+                <button
+                  type="submit"
+                  id="c-submit"
+                  class="btn-primary disabled:opacity-60"
+                >
+                  Send Message
+                </button>
+                <p id="c-status" role="status" class="text-sm"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="border-t border-line/10 bg-bg px-5 py-10">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-soft"
+      >
+        <p>© <span id="year">2026</span> Abuzar Khan. All rights reserved.</p>
+        <ul class="flex flex-wrap justify-center gap-5">
+          <li>
+            <a
+              class="hover:text-fg transition"
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-fg transition"
+              href="https://linkedin.com/in/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-fg transition"
+              href="mailto:aburaja2654@gmail.com"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <button
+      id="to-top"
+      aria-label="Back to top"
+      class="fixed bottom-6 right-6 z-40 grid h-11 w-11 place-items-center rounded-full bg-btn text-white shadow-lg hover:bg-indigo-500"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 19V5m-6 6 6-6 6 6"
+        />
+      </svg>
+    </button>
+
+    <!-- ===================== SCRIPT 1: CONTENT + BEHAVIOUR ===================== -->
+    <script>
+      /* ------------------------------------------------------------------
+       ALL PORTFOLIO CONTENT LIVES HERE. Edit values, save, push.
+       Source: Abuzar's two resumes. Items marked TODO need your input.
+       ------------------------------------------------------------------ */
+      const DATA = {
+        education: [
+          {
+            title: "Bachelor of Technology, Computer Science Engineering",
+            org: "SSGB College of Engineering & Technology, Bhusawal",
+            period: "Pursuing",
+            text: "CGPA: 7.8",
+          },
+          {
+            title: "Higher Secondary Education (Class XII)",
+            org: "Jagjivandas English Medium School & Junior College, Muktainagar",
+            period: "2021",
+            text: "Percentage: 74.17%",
+          },
+        ],
+        certifications: [
+          {
+            title: "Full Stack Web Development Training",
+            issuer: "Apna College",
+            year: "2024",
+          },
+          {
+            title: "Web Development Internship Certificate",
+            issuer: "CodeSoft",
+            year: "2024",
+          },
+          {
+            title: "Introduction to Cloud Computing",
+            issuer: "Infosys Springboard",
+            year: "2025",
+          },
+          {
+            title: "Fundamentals of Statistics and Visualization in Python",
+            issuer: "Infosys Springboard",
+            year: "2025",
+          },
+          {
+            title:
+              "Digital Marketing: Affiliate Marketing and Business Development",
+            issuer: "Self-study & practice",
+            year: "",
+          },
+        ],
+        techSkills: [
+          {
+            title: "Languages",
+            icon: "💻",
+            items: ["Java", "JavaScript", "SQL"],
+          },
+          {
+            title: "Frontend",
+            icon: "🎨",
+            items: ["React.js", "Tailwind CSS"],
+          },
+          {
+            title: "Backend & APIs",
+            icon: "⚙️",
+            items: [
+              "Node.js",
+              "Express.js",
+              "REST APIs",
+              "JWT Authentication",
+              "Microservices",
+              "System Design",
+              "Redis",
+            ],
+          },
+          { title: "Databases", icon: "🗄️", items: ["MongoDB", "SQL"] },
+          {
+            title: "Cloud & DevOps",
+            icon: "☁️",
+            items: ["AWS", "Docker", "Git"],
+          },
+          {
+            title: "Tools & AI",
+            icon: "🧰",
+            items: ["Postman", "AI Integration", "Cloudinary API", "Axios"],
+          },
+        ],
+        bizSkills: [
+          {
+            title: "Business Development",
+            icon: "📊",
+            items: [
+              "Market Research",
+              "Lead Generation",
+              "Prospect Identification",
+              "Account Mapping",
+              "Client Communication",
+            ],
+          },
+          {
+            title: "Marketing & Sales",
+            icon: "📣",
+            items: [
+              "Affiliate Marketing",
+              "Social Media Outreach",
+              "Digital Campaigns",
+              "Client Relationship Management",
+              "Follow-ups",
+              "Networking",
+            ],
+          },
+          {
+            title: "Professional Attributes",
+            icon: "🌟",
+            items: [
+              "Presentation Delivery",
+              "Requirement Gathering",
+              "Problem Solving",
+              "Cross-functional Collaboration",
+              "Task Coordination",
+              "Process Improvement",
+              "Workflow Planning",
+            ],
+          },
+          {
+            title: "Digital Tools",
+            icon: "🖥️",
+            items: [
+              "MS Office",
+              "Digital Collaboration Platforms",
+              "Data Visualization",
+              "Basic Web Tools",
+            ],
+          },
+          {
+            title: "Spoken Languages",
+            icon: "🗣️",
+            items: ["English (Professional)", "Hindi (Professional)"],
+          },
+        ],
+        experience: [
+          {
+            role: "Affiliate Marketer & Lead Generation Specialist",
+            org: "Self-Employed",
+            period: "2025 – Present",
+            place: "Remote",
+            points: [
+              "Generated high-quality leads through targeted digital campaigns and social media outreach.",
+              "Built and managed client relationships with consistent follow-ups, supporting repeat business and growth.",
+              "Identified target audiences and refined outreach approaches to improve campaign effectiveness.",
+            ],
+            tech: [
+              "Affiliate Marketing",
+              "Lead Generation",
+              "Social Media Outreach",
+              "CRM Follow-ups",
+            ],
+          },
+          {
+            role: "Web Development Intern",
+            org: "CodeSoft",
+            period: "Nov 2024 – Dec 2024",
+            place: "Internship",
+            points: [
+              "Collaborated with cross-functional teams to analyze project requirements and deliver tech solutions within deadlines.",
+              "Conducted market and feature research for strategic planning and presented technical findings during review discussions.",
+              "Acted as a bridge between technical logic and stakeholder requirements to improve product delivery.",
+              "Focused on user experience so final deliverables met client expectations.",
+            ],
+            tech: [
+              "Web Development",
+              "Requirement Analysis",
+              "Team Collaboration",
+              "Presentations",
+            ],
+          },
+        ],
+        projects: [
+          {
+            title: "ScaleStream Engine",
+            subtitle: "High-performance data feed",
+            stack: ["MongoDB", "Express.js", "React.js", "Node.js", "Axios"],
+            grad: "from-indigo-500 to-sky-500",
+            points: [
+              "Designed Cursor-Based Pagination using Base64-encoded compound pointers, replacing slow offset pagination.",
+              "Built a strict MongoDB compound index on category, creation time and unique ID, eliminating full collection scans across 200,000+ mock records.",
+              "Fixed data drift and duplication caused by concurrent real-time inserts and optimised the client layer with clean, manual Axios states.",
+            ],
+            live: "",
+            repo: "",
+          },
+          {
+            title: "VIBE",
+            subtitle: "Social networking platform",
+            stack: ["MERN Stack", "Cloudinary", "JWT"],
+            grad: "from-fuchsia-500 to-rose-500",
+            points: [
+              "Studied user engagement metrics to deploy a platform with real-time interactions and notifications.",
+              "Handled end-to-end frontend and backend integration with seamless user flow and data validation.",
+              "Integrated the Cloudinary API for fast media uploads (reels and stories) and built modular controllers with JWT-protected routes.",
+            ],
+            live: "",
+            repo: "",
+          },
+          {
+            title: "RentMate",
+            subtitle: "Smart rental management system",
+            stack: ["MERN Stack", "REST APIs", "Role-based access"],
+            grad: "from-emerald-500 to-teal-500",
+            points: [
+              "Analysed rental market challenges to design a centralised platform for landlords and tenants.",
+              "Gathered business requirements and translated them into functional software modules.",
+              "Implemented RESTful APIs for automated rent tracking, data management and secure role-based access.",
+            ],
+            live: "",
+            repo: "",
+          },
+          {
+            title: "TaskFlow",
+            subtitle: "Team management tool",
+            stack: [
+              "Task assignment",
+              "Real-time tracking",
+              "Admin & User roles",
+            ],
+            grad: "from-amber-500 to-orange-500",
+            points: [
+              "Designed a system where managers assign tasks and track team progress in real time, improving organisational efficiency.",
+              "Streamlined communication between hierarchy levels (Admin and Users) for clearer accountability.",
+            ],
+            live: "",
+            repo: "",
+          },
+        ],
+        /* Add real testimonials here. Each: { quote, name, role, company }. Leave empty to show a friendly placeholder. */
+        testimonials: [],
+      };
+
+      /* ---------------- helpers ---------------- */
+      const $ = (s) => document.querySelector(s);
+      const chips = (arr) =>
+        arr.map((t) => `<span class="chip">${t}</span>`).join("");
+
+      /* ---------------- Education / certifications ---------------- */
+      $("#education-list").innerHTML = DATA.education
+        .map(
+          (i) => `
+      <li data-reveal class="relative border-l border-line/15 pb-8 pl-8 last:pb-0">
+        <span class="absolute -left-[7px] top-1.5 h-3.5 w-3.5 rounded-full bg-accent ring-4 ring-bg"></span>
+        <p class="text-xs uppercase tracking-widest text-accent">${i.period}</p>
+        <h4 class="mt-1 font-semibold">${i.title}</h4>
+        <p class="text-sm text-soft">${i.org}</p>
+        <p class="mt-2 inline-block rounded-lg bg-accent/10 px-3 py-1 text-sm font-medium text-accent">${i.text}</p>
+      </li>`,
+        )
+        .join("");
+
+      $("#cert-list").innerHTML = DATA.certifications
+        .map(
+          (c) => `
+      <div data-reveal class="card flex items-start gap-4 !p-4">
+        <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-accent/10 text-xl">🏅</span>
+        <div><h4 class="font-semibold leading-snug">${c.title}</h4>
+          <p class="text-sm text-soft">${c.issuer}${c.year ? " · " + c.year : ""}</p></div>
+      </div>`,
+        )
+        .join("");
+
+      /* ---------------- Skills ---------------- */
+      const skillCard = (c) => `
+      <div data-reveal class="card">
+        <h4 class="flex items-center gap-2 font-semibold"><span class="text-xl">${c.icon}</span>${c.title}</h4>
+        <div data-stagger class="mt-4 flex flex-wrap gap-2">${chips(c.items)}</div>
+      </div>`;
+      $("#tech-skills").innerHTML = DATA.techSkills.map(skillCard).join("");
+      $("#biz-skills").innerHTML = DATA.bizSkills.map(skillCard).join("");
+
+      /* ---------------- Experience ---------------- */
+      $("#exp-list").innerHTML = DATA.experience
+        .map(
+          (e) => `
+      <li data-reveal class="relative border-l border-line/15 pb-10 pl-8 last:pb-0">
+        <span class="absolute -left-[7px] top-2 h-3.5 w-3.5 rounded-full bg-accent ring-4 ring-bg"></span>
+        <div class="card">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div><h3 class="text-xl font-bold">${e.role}</h3><p class="text-accent">${e.org} · <span class="text-soft">${e.place}</span></p></div>
+            <span class="tag">${e.period}</span>
+          </div>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted">${e.points.map((p) => `<li>${p}</li>`).join("")}</ul>
+          <div class="mt-4 flex flex-wrap gap-2">${chips(e.tech)}</div>
+        </div>
+      </li>`,
+        )
+        .join("");
+
+      /* ---------------- Projects (buttons appear only when a link is provided) ---------------- */
+      $("#project-list").innerHTML = DATA.projects
+        .map(
+          (p) => `
+      <article data-reveal class="card flex flex-col !p-0 overflow-hidden">
+        <div class="relative h-28 bg-gradient-to-br ${p.grad} flex items-end p-5">
+          <span class="absolute right-4 top-2 text-6xl font-extrabold text-white/25">${p.title.charAt(0)}</span>
+          <div class="text-white"><h3 class="text-xl font-bold leading-tight">${p.title}</h3><p class="text-sm text-white/85">${p.subtitle}</p></div>
+        </div>
+        <div class="flex flex-1 flex-col p-6">
+          <ul class="list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted">${p.points.map((x) => `<li>${x}</li>`).join("")}</ul>
+          <div class="mt-4 flex flex-wrap gap-2">${p.stack.map((t) => `<span class="tag">${t}</span>`).join("")}</div>
+          ${
+            p.live || p.repo
+              ? `<div class="mt-5 flex gap-4 text-sm font-semibold">
+            ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-fg transition">Live demo ↗</a>` : ""}
+            ${p.repo ? `<a href="${p.repo}" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-fg transition">Source code ↗</a>` : ""}
+          </div>`
+              : ""
+          }
+        </div>
+      </article>`,
+        )
+        .join("");
+
+      /* ---------------- Testimonials (carousel, or friendly placeholder when empty) ---------------- */
+      const tCard = $("#t-card"),
+        tDots = $("#t-dots");
+      let ti = 0,
+        tTimer;
+      if (!DATA.testimonials.length) {
+        $("#t-controls").classList.add("hidden");
+        tCard.innerHTML = `
+        <div class="text-4xl text-accent">“</div>
+        <p class="text-lg leading-relaxed text-muted">Worked with me on a project, internship or campaign? Your feedback will be featured here.</p>
+        <a href="#contact" class="btn-ghost mt-6 inline-block">Get in touch</a>`;
+      } else {
+        tDots.innerHTML = DATA.testimonials
+          .map(
+            (_, i) =>
+              `<button class="h-2.5 w-2.5 rounded-full bg-line/25 transition" data-i="${i}" aria-label="Show testimonial ${i + 1}"></button>`,
+          )
+          .join("");
+        const showT = (i, animateIt) => {
+          ti = (i + DATA.testimonials.length) % DATA.testimonials.length;
+          const t = DATA.testimonials[ti];
+          tCard.innerHTML = `
+          <div class="text-4xl text-accent">“</div>
+          <blockquote class="text-lg leading-relaxed text-muted">${t.quote}</blockquote>
+          <div class="mt-6 flex items-center justify-center gap-3">
+            <span class="grid h-11 w-11 place-items-center rounded-full bg-accent/15 font-bold text-accent">${t.name.charAt(0)}</span>
+            <div class="text-left"><p class="font-semibold">${t.name}</p><p class="text-sm text-soft">${t.role}, ${t.company}</p></div>
+          </div>`;
+          tDots.querySelectorAll("button").forEach((d, k) => {
+            d.style.background = k === ti ? "rgb(var(--c-accent))" : "";
+            d.style.width = k === ti ? "1.5rem" : "";
+          });
+          if (animateIt && window.motionAnimate)
+            window.motionAnimate(
+              tCard,
+              { opacity: [0, 1], x: [30, 0] },
+              { duration: 0.5 },
+            );
+        };
+        const startT = () => {
+          clearInterval(tTimer);
+          tTimer = setInterval(() => showT(ti + 1, true), 6000);
+        };
+        $("#t-prev").addEventListener("click", () => {
+          showT(ti - 1, true);
+          startT();
+        });
+        $("#t-next").addEventListener("click", () => {
+          showT(ti + 1, true);
+          startT();
+        });
+        tDots.addEventListener("click", (e) => {
+          const b = e.target.closest("button");
+          if (b) {
+            showT(+b.dataset.i, true);
+            startT();
+          }
+        });
+        tCard.addEventListener("mouseenter", () => clearInterval(tTimer));
+        tCard.addEventListener("mouseleave", startT);
+        showT(0, false);
+        startT();
+      }
+
+      /* ---------------- Contact form ---------------- */
+      // Create a free form at https://formspree.io and paste its endpoint below.
+      // Until then the form opens the visitor's email app (mailto) so no message is lost.
+      const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
+      const CONTACT_EMAIL = "aburaja2654@gmail.com";
+      const form = $("#contact-form"),
+        status = $("#c-status"),
+        submitBtn = $("#c-submit");
+      function setStatus(msg, ok) {
+        status.textContent = msg;
+        status.className = "text-sm " + (ok ? "text-ok" : "text-rose-500");
+      }
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (form.elements.website.value) return;
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          setStatus("Please fill in all fields correctly.", false);
+          return;
+        }
+        const payload = Object.fromEntries(
+          ["name", "email", "subject", "message"].map((k) => [
+            k,
+            form.elements[k].value.trim(),
+          ]),
+        );
+        if (FORM_ENDPOINT.includes("your-form-id")) {
+          location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(payload.subject)}&body=${encodeURIComponent(payload.message + "\n\n- " + payload.name + " (" + payload.email + ")")}`;
+          setStatus("Opening your email app...", true);
+          return;
+        }
+        submitBtn.disabled = true;
+        setStatus("Sending...", true);
+        try {
+          const res = await fetch(FORM_ENDPOINT, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+          if (!res.ok) throw new Error("Request failed");
+          form.reset();
+          setStatus("Thanks! Your message was sent.", true);
+        } catch (err) {
+          setStatus("Something went wrong. Please email me directly.", false);
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+
+      $("#year").textContent = new Date().getFullYear();
+
+      /* ---------------- Typewriter roles ---------------- */
+      (function () {
+        const roles = [
+          "Computer Science Engineering Student",
+          "MERN Stack Developer",
+          "Business Development & Pre-Sales",
+          "Affiliate Marketer & Lead Generator",
+        ];
+        const el = $("#typed");
+        let r = 0,
+          c = roles[0].length,
+          deleting = true;
+        function tick() {
+          const word = roles[r];
+          c += deleting ? -1 : 1;
+          el.textContent = word.slice(0, c);
+          let delay = deleting ? 35 : 70;
+          if (!deleting && c === word.length) {
+            deleting = true;
+            delay = 1600;
+          } else if (deleting && c === 0) {
+            deleting = false;
+            r = (r + 1) % roles.length;
+            delay = 300;
+          }
+          setTimeout(tick, delay);
+        }
+        setTimeout(tick, 2600);
+      })();
+
+      /* ---------------- Theme toggle (dark / light) ---------------- */
+      (function () {
+        const root = document.documentElement,
+          btn = $("#theme-toggle"),
+          meta = document.querySelector('meta[name="theme-color"]');
+        function apply(dark, save) {
+          root.classList.toggle("dark", dark);
+          if (meta) meta.setAttribute("content", dark ? "#020617" : "#f8fafc");
+          btn.setAttribute("aria-pressed", dark);
+          if (save) {
+            try {
+              localStorage.setItem("theme", dark ? "dark" : "light");
+            } catch (e) {}
+          }
+        }
+        apply(root.classList.contains("dark"), false);
+        btn.addEventListener("click", () =>
+          apply(!root.classList.contains("dark"), true),
+        );
+      })();
+
+      /* ---------------- Navbar: scroll state, mobile menu, active link, progress ---------------- */
+      (function () {
+        const header = $("#header"),
+          menuBtn = $("#menu-btn"),
+          mobileMenu = $("#mobile-menu");
+        const iconOpen = $("#icon-open"),
+          iconClose = $("#icon-close");
+        const navLinks = document.querySelectorAll(".nav-link, .mobile-link");
+        const sections = document.querySelectorAll("main section[id]");
+        const progress = $("#progress"),
+          toTop = $("#to-top");
+
+        function onScroll() {
+          const y = window.scrollY,
+            max = document.documentElement.scrollHeight - window.innerHeight;
+          const scrolled = y > 20;
+          header.classList.toggle("bg-bg/90", scrolled);
+          header.classList.toggle("shadow-lg", scrolled);
+          header.classList.toggle("bg-bg/60", !scrolled);
+          progress.style.width = (max > 0 ? (y / max) * 100 : 0) + "%";
+          toTop.classList.toggle("show", y > 600);
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+        toTop.addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: "smooth" }),
+        );
+
+        function setMenu(open) {
+          mobileMenu.style.maxHeight = open
+            ? mobileMenu.scrollHeight + "px"
+            : "0px";
+          iconOpen.classList.toggle("hidden", open);
+          iconClose.classList.toggle("hidden", !open);
+          menuBtn.setAttribute("aria-expanded", open);
+        }
+        menuBtn.addEventListener("click", () =>
+          setMenu(menuBtn.getAttribute("aria-expanded") !== "true"),
+        );
+        document
+          .querySelectorAll(".mobile-link")
+          .forEach((l) => l.addEventListener("click", () => setMenu(false)));
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                navLinks.forEach((link) =>
+                  link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === "#" + entry.target.id,
+                  ),
+                );
+              }
+            });
+          },
+          { rootMargin: "-45% 0px -50% 0px" },
+        );
+        sections.forEach((s) => observer.observe(s));
+      })();
+    </script>
+
+    <!-- ===================== SCRIPT 2: MOTION (Framer Motion for vanilla JS) ===================== -->
+    <script type="module">
+      import {
+        animate,
+        stagger,
+        inView,
+      } from "https://cdn.jsdelivr.net/npm/motion@11.18.2/+esm";
+
+      window.motionAnimate = animate;
+      window.__motionReady = true;
+
+      const root = document.documentElement;
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      if (reduceMotion) {
+        root.classList.remove("motion-pending");
+      } else {
+        const heroItems = document.querySelectorAll(
+          "[data-animate], [data-pop]",
+        );
+        const reveals = document.querySelectorAll("[data-reveal]");
+        const groups = document.querySelectorAll("[data-stagger]");
+
+        heroItems.forEach((el) => (el.style.opacity = 0));
+        reveals.forEach((el) => (el.style.opacity = 0));
+        groups.forEach((g) =>
+          [...g.children].forEach((c) => (c.style.opacity = 0)),
+        );
+        root.classList.remove("motion-pending");
+
+        /* ---------- HERO ---------- */
+        animate(
+          "[data-animate]",
+          { opacity: [0, 1], y: [30, 0] },
+          {
+            duration: 0.8,
+            delay: stagger(0.1, { startDelay: 0.5 }),
+            ease: [0.22, 1, 0.36, 1],
+          },
+        );
+        animate(
+          "#profile",
+          { opacity: [0, 1], scale: [0.7, 1] },
+          { duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] },
+        );
+        animate(
+          "#profile [data-pop]",
+          { opacity: [0, 1], scale: [0, 1] },
+          {
+            duration: 0.6,
+            delay: stagger(0.15, { startDelay: 1.3 }),
+            ease: "backOut",
+          },
+        );
+
+        animate(
+          "#ring",
+          { rotate: 360 },
+          { duration: 10, repeat: Infinity, ease: "linear" },
+        );
+        document.querySelectorAll("[data-float]").forEach((el, i) => {
+          animate(
+            el,
+            { y: [0, -12] },
+            {
+              duration: 2.2 + i * 0.4,
+              delay: 1.8,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            },
+          );
+        });
+        animate(
+          "#blob-1",
+          { x: [0, 60], y: [0, 40] },
+          {
+            duration: 9,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          },
+        );
+        animate(
+          "#blob-2",
+          { x: [0, -50], y: [0, -40] },
+          {
+            duration: 11,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          },
+        );
+        animate(
+          "#scroll-hint",
+          { y: [0, 8] },
+          {
+            duration: 1.2,
+            delay: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
+          },
+        );
+
+        document.querySelectorAll("[data-count]").forEach((el) => {
+          const end = +el.dataset.count,
+            dec = +(el.dataset.decimals || 0),
+            suffix = el.dataset.suffix || "";
+          el.textContent = (0).toFixed(dec) + suffix;
+          animate(0, end, {
+            duration: 2,
+            delay: 1.2,
+            ease: "easeOut",
+            onUpdate: (v) => (el.textContent = v.toFixed(dec) + suffix),
+          });
+        });
+
+        const hero = document.getElementById("home");
+        const tilt = document.getElementById("profile-tilt");
+        if (window.matchMedia("(hover: hover)").matches) {
+          hero.addEventListener("mousemove", (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 2;
+            const y = (e.clientY / window.innerHeight - 0.5) * 2;
+            animate(
+              tilt,
+              { rotateY: x * 12, rotateX: -y * 12 },
+              { duration: 0.4, ease: "easeOut" },
+            );
+          });
+          hero.addEventListener("mouseleave", () =>
+            animate(
+              tilt,
+              { rotateY: 0, rotateX: 0 },
+              { duration: 0.6, ease: "easeOut" },
+            ),
+          );
+        }
+
+        /* ---------- SCROLL REVEALS ---------- */
+        const el_ = (arg) => (arg instanceof Element ? arg : arg.target); // works across Motion versions
+
+        inView(
+          "[data-reveal]",
+          (arg) => {
+            animate(
+              el_(arg),
+              { opacity: [0, 1], y: [40, 0] },
+              { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+            );
+          },
+          { amount: 0.15 },
+        );
+
+        inView(
+          "[data-stagger]",
+          (arg) => {
+            animate(
+              el_(arg).children,
+              { opacity: [0, 1], scale: [0.85, 1] },
+              { duration: 0.4, delay: stagger(0.05) },
+            );
+          },
+          { amount: 0.3 },
+        );
+      }
+    </script>
+  </body>
+</html>
